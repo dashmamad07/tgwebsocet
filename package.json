@@ -1,0 +1,39 @@
+{
+  "name": "tgwebsocet",
+  "version": "2.0.0",
+  "description": "Telegram File Downloader - Client-side MTProto via teleproto, deployed on Cloudflare Pages",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && wrangler pages deploy dist --project-name tgcf-dl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CloudflareHackers/TGCFWorkersDLBot.git"
+  },
+  "keywords": [
+    "telegram",
+    "downloader",
+    "mtproto",
+    "teleproto",
+    "cloudflare-pages"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CloudflareHackers/TGCFWorkersDLBot/issues"
+  },
+  "homepage": "https://github.com/CloudflareHackers/TGCFWorkersDLBot#readme",
+  "dependencies": {
+    "buffer": "^6.0.3",
+    "events": "^3.3.0",
+    "process": "^0.11.10",
+    "teleproto": "^1.223.1",
+    "util": "^0.12.5"
+  },
+  "devDependencies": {
+    "vite": "^6.2.2"
+  }
+}
